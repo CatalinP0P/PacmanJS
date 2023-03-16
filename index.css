@@ -1,0 +1,59 @@
+body 
+{
+    background-color: black;
+    text-align: center;
+    align-items: center;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.disabled
+{
+    display: none;
+}
+
+h1
+{
+    font-size: 75px;
+}
+
+.score
+{
+    position: absolute;
+    left: 50px;
+    top: 150px;
+    color: white;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.facing-up
+{
+    transform: rotate(90);
+}
+
+#overlay
+{
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: none;
+    text-align: center;
+    align-items: center;
+    background-color: rgba(0,0,0, .75);
+    padding-top: 20%;
+}
+
+#overlay > label
+{
+    font-size: 10vh;
+    font-weight: 600;   
+}
+
+#overlay.visible
+{
+    display: block;
+}

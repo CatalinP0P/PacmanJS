@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="index.css" >
+  </head>
+  
+  <body style="text-align: center; align-items: center;">
+    <div id="overlay" >
+      <label> You lost </label>
+    </div>
+
+    <h1> PACMAN </h1>
+    <label class="score" id="score"> Score : 0 </label> 
+    <canvas id="canvas">      
+    </canvas>
+    <div class="disabled" id="images"  > 
+      <img src="Assets/pacman.png" id="pacmanImage" >
+      <img src="Assets/pacman.gif" id="pacmanFrames" >
+      <img src="Assets/ghost1.png" id="ghost1Image" > 
+      <img src="Assets/ghost2.png" id="ghost2Image" >
+      <img src="Assets/ghost3.png" id="ghost3Image" >
+      <img src="Assets/ghost4.png" id="ghost4Image" >
+    </div>
+    
+    <script src="ghost.js" ></script>
+    <script src="pacman.js" > </script>
+    <script src="index.js" > </script>
+  </body>
+</html>
