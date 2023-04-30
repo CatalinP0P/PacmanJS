@@ -34,8 +34,8 @@ var scoreLabel;
 // Game Settings
 const rows = 23;
 const cols = 21;
-const cellSize = 40;
-const coinSize = 10;
+const cellSize = 30;
+const coinSize = cellSize/4;
 var score = 0;
 
 // Player data

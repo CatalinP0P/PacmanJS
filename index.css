@@ -59,13 +59,6 @@ h1
     display: block;
 }
 
-#canvas
-{
-    margin: 0 auto;
-    margin-top: -150px;
-    transform: scale(.75);
-}
-
 #mobileControls 
 {
     margin-top: 32px;
