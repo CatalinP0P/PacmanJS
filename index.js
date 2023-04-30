@@ -35,7 +35,8 @@ var scoreLabel;
 const rows = 23;
 const cols = 21;
 var cellSize = 30;
-if ( window.innerWidth < 1200 )
+console.log(window.innweWidth);
+if ( window.innerWidth < 3000 )
     cellSize = 20;
 
 const coinSize = cellSize/4;
