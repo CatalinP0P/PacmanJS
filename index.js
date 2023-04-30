@@ -34,10 +34,7 @@ var scoreLabel;
 // Game Settings
 const rows = 23;
 const cols = 21;
-var cellSize = 30;
-console.log(window.innerWidth);
-if ( window.innerWidth < 3000 )
-    cellSize = 20;
+var cellSize = 20;
 
 const coinSize = cellSize/4;
 var score = 0;
