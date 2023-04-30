@@ -34,7 +34,7 @@ var scoreLabel;
 // Game Settings
 const rows = 23;
 const cols = 21;
-var cellSize = 20;
+var cellSize = 15;
 
 const coinSize = cellSize/4;
 var score = 0;
@@ -357,12 +357,14 @@ function changeDirectionIfPossible()
     }
 }
 
+const ghostSpeed = 1.25;
+
 function initGhosts()
 {
-    ghost1.constructor(9 * cellSize, 10 * cellSize, cellSize / 20);
-    ghost2.constructor(11 * cellSize, 10 * cellSize, cellSize / 20);
-    ghost3.constructor(9 * cellSize, 11 * cellSize, cellSize / 20);
-    ghost4.constructor(11 * cellSize, 11 * cellSize, cellSize / 20);
+    ghost1.constructor(9 * cellSize, 10 * cellSize, ghostSpeed);
+    ghost2.constructor(11 * cellSize, 10 * cellSize, ghostSpeed);
+    ghost3.constructor(9 * cellSize, 11 * cellSize, ghostSpeed);
+    ghost4.constructor(11 * cellSize, 11 * cellSize, ghostSpeed);
 }
 
 window.addEventListener("load", e =>
