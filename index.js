@@ -34,7 +34,10 @@ var scoreLabel;
 // Game Settings
 const rows = 23;
 const cols = 21;
-const cellSize = 30;
+var cellSize = 30;
+if ( window.innerWidth < 800 )
+    cellSize = 20;
+
 const coinSize = cellSize/4;
 var score = 0;
 
@@ -358,10 +361,10 @@ function changeDirectionIfPossible()
 
 function initGhosts()
 {
-    ghost1.constructor(9 * cellSize, 10 * cellSize, 2);
-    ghost2.constructor(11 * cellSize, 10 * cellSize, 2);
-    ghost3.constructor(9 * cellSize, 11 * cellSize, 2);
-    ghost4.constructor(11 * cellSize, 11 * cellSize, 2);
+    ghost1.constructor(9 * cellSize, 10 * cellSize, cellSize / 20);
+    ghost2.constructor(11 * cellSize, 10 * cellSize, cellSize / 20);
+    ghost3.constructor(9 * cellSize, 11 * cellSize, cellSize / 20);
+    ghost4.constructor(11 * cellSize, 11 * cellSize, cellSize / 20);
 }
 
 window.addEventListener("load", e =>
