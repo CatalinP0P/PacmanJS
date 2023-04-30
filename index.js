@@ -400,3 +400,15 @@ window.addEventListener("keydown", e =>
         nextDirection = "down";
     }
 })
+
+window.addEventListener("click", (e) =>
+{
+    if ( e.target.matches("#left") )
+        nextDirection = "left";
+    if ( e.target.matches("#right") )
+        nextDirection = "right";
+    if ( e.target.matches("#up") )
+        nextDirection = "up";
+    if ( e.target.matches("#down") )
+        nextDirection = "down";
+})
